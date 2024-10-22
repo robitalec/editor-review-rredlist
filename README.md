@@ -10,6 +10,14 @@ Resources:
 
 ## TODO
 
+- [ ] see fixes list for devguide
+
+
+From submission: 
+
+- [X] check differences in package coverage
+
+
 Upon submission:
 
 - Submission will automatically generate package check output from ropensci-review-bot which should be examined for any outstanding issues (most exceptions will need to be justified by the author in the particular context of their package.). If you want to re-run checks after any package change post a comment @ropensci-review-bot check package.
