@@ -1,0 +1,217 @@
+---
+output:
+    html_notebook:
+        toc: true
+        toc_float: true
+editor_options:
+  chunk_output_type: inline
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+
+library(magrittr)
+library(devtools)
+```
+
+# `rredlist` - package editor checks
+
+## **Editor:** [\@]()
+
+### Date:
+**`r cat(sprintf("**Last updated:** %s", Sys.Date()))`**
+
+***
+
+<br>
+
+This report documents the editor checks of **rOpenSci** submitted package:
+
+### **`rredlist`: ropensci/software-review**  issue [\#NA](https://github.com/ropensci/onboarding/issues/).
+
+<br>
+
+## Package info
+
+**Description:**
+
+'IUCN' Red List (<https://api.iucnredlist.org/>) client.
+    The 'IUCN' Red List is a global list of threatened and endangered species.
+    Functions cover all of the Red List 'API' routes. An 'API' key is required.
+
+**Author:** `r 
+    c(person(given = "William",
+             family = "Gearty",
+             role = c("aut", "cre"),
+             email = "willgearty@gmail.com"),
+      person(given = "Scott",
+             family = "Chamberlain",
+             role = c("aut"),
+             email = "myrmecocystus@gmail.com"),
+      person(given = "rOpenSci",
+             role = "fnd",
+             comment = "https://ropensci.org/"),
+      person(given = "Maëlle",
+             family = "Salmon",
+             role = "ctb",
+             email = "maelle.salmon@yahoo.se")
+      )`
+
+**repo url:** <https://github.com/ropensci/rredlist>
+
+**website url:** <https://docs.ropensci.org/rredlist>
+
+## Review info
+
+
+#### See [editors guidelines](https://ropensci.github.io/dev_guide/editorguide.html) for further information on the rOpenSci editors checks process.
+
+**key editor checks:**
+
+
+
+<!--Please be respectful and kind to the authors in your reviews. The rOpenSci [code of conduct](https://github.com/ropensci/onboarding/blob/master/policies.md/#code-of-conduct) is mandatory for everyone involved in our review process.-->
+
+
+***
+
+### session info
+
+
+```{r sessionInfo}
+sessionInfo()
+```
+
+
+```{r pkg_dir, echo = F}
+pkg_dir <- "../rredlist"
+```
+
+## Test installation
+
+### test local `rredlist` install:
+
+```{r test-local}
+install(pkg_dir, dependencies = T, build_vignettes = T)
+```
+
+```{r github-rm}
+remove.packages("rredlist")
+```
+#### **comments:**
+
+<!-- record comments on local install here -->
+
+***
+
+### test install of `rredlist` from GitHub with:
+
+```{r test-github}
+devtools::install_github("ropensci/rredlist", dependencies = T, build_vignettes = T)
+```
+
+#### **comments:**
+
+<!-- record comments on github install here -->
+
+***
+
+
+
+## Check package integrity
+
+### run checks on `rredlist` source:
+
+```{r check-checks}
+devtools::check(pkg_dir)
+```
+#### **comments:**
+
+<!-- record comments on checks here -->
+
+***
+
+### run tests on `rredlist` source:
+
+```{r check-tests}
+devtools::test(pkg_dir)
+```
+#### **comments:**
+
+<!-- record comments on tests here -->
+
+***
+
+
+### check `rredlist` for goodpractice:
+
+```{r test-goodpractice}
+goodpractice::gp(pkg_dir)
+```
+#### **comments:**
+
+<!-- record comments on goodpractice here -->
+
+***
+
+## Check package metadata files
+
+### inspect
+
+- #### [README](https://github.com/ropensci/rredlist)
+- #### [DESCRIPTION](https://github.com/ropensci/rredlist/blob/master/DESCRIPTION)
+
+### spell check
+
+```{r spell-check}
+devtools::spell_check(pkg_dir)
+```
+
+#### **comments:**
+
+<!-- record comments on metadata files here -->
+
+***
+
+## Review test suite:
+
+### test coverage
+
+```{r pkg_coverage}
+covr::package_coverage(pkg_dir)
+
+```
+
+### inspect [tests](https://github.com/ropensci/rredlist/blob/master/tests/testthat)
+
+
+#### **comments:**
+
+<!-- record comments on testing suite here -->
+
+
+***
+
+
+### Reviewer assignment response:
+
+
+ropensci, could you please add the rOpenSci under review badge to your README?
+```
+[![](https://badges.ropensci.org/NA_status.svg)](https://github.com/ropensci/software-review/issues/NA)
+```
+
+---
+
+Reviewers:
+Due date:
+
+***
+
+
+
