@@ -17,18 +17,11 @@
 
 Thanks for the submission @willgearty, I am keen to help on this review!
 
-All above looks good to me. Some minor comments below, the authors could 
-consider working on while we are looking for reviewers. 
+All above looks good to me. Some minor comments below, the authors could consider working on while we are looking for reviewers. 
 
-- The README has a great introductory paragraph, installation instructions, 
-and meta information. It could use a brief demonstration usage, see [here](https://devguide.ropensci.org/pkg_building.html#readme).
-- The introductory vignette covers installation, authentication, high level 
-and low level interface and best practices. It might be helpful to have a general overview of the available functions or groups of functions in {rredlist}. 
-- Good to see tests for {rredlist} use {vcr} for HTTP testing. In
-[CONTRIBUTING.md](https://github.com/ropensci/rredlist/blob/master/.github/CONTRIBUTING.md), 
-the authors could consider including a note about how testing is different in
-{rredlist} due to HTTP requests, maybe by linking to {vcr} and 
-[HTTP testing in R](https://books.ropensci.org/http-testing/index.html)? This might help interested contributors to get familiar with HTTP testing. 
+- The README has a great introductory paragraph, installation instructions, and meta information. It could use a brief demonstration usage, see [here](https://devguide.ropensci.org/pkg_building.html#readme).
+- The introductory vignette covers installation, authentication, high level and low level interface and best practices. It might be helpful to have a general overview of the available functions or groups of functions in {rredlist}. 
+- Good to see tests for {rredlist} use {vcr} for HTTP testing. In [CONTRIBUTING.md](https://github.com/ropensci/rredlist/blob/master/.github/CONTRIBUTING.md), the authors could consider including a note about how testing is different in {rredlist} due to HTTP requests, maybe by linking to {vcr} and [HTTP testing in R](https://books.ropensci.org/http-testing/index.html)? This might help interested contributors to get familiar with HTTP testing. 
 - One minor note from {goodpractice}:  
     
     ```
@@ -37,4 +30,3 @@ the authors could consider including a note about how testing is different in
           It might return a vector, or a list, depending on the
           input data. Consider using vapply() instead.
     ```
-
