@@ -34,7 +34,18 @@ Upon submission:
 Look for and assign two reviewers:
 
 - [ ] Comment with @ropensci-review-bot seeking reviewers.
+- [ ] Review criteria for choosing a reviewer:
+  - Has not reviewed a package for us within the last 6 months.
+  - Some package development experience.
+  - Some domain experience in the field of the package or data source
+  - No conflicts of interest.
+  - Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
+  - Diversity - with two reviewers both shouldn’t be cis white males.
+  - Some evidence that they are interested in openness or R community activities, although cold emailing is fine.
+  - Each submission should be reviewed by two package reviewers. Although it is fine for one of them to have less package development experience and more domain knowledge, the review should not be split in two. Both reviewers need to review the package comprehensively, though from their particular perspective. In general, at least one reviewer should have prior reviewing experience, and of course inviting one new reviewer expands our pool of reviewers.
 - [ ] Use the email template if needed for inviting reviewers
   - [ ] When inviting reviewers, include something like “if I don’t hear from you in a week, I’ll assume you are unable to review,” so as to give a clear deadline when you’ll move on to looking for someone else.
 - [ ] Assign reviewers with @ropensci-review-bot assign @username as reviewer. add can also be used instead of assign, and to reviewers (plural) instead of as reviewer (single). The following is thus also valid: @ropensci-review-bot add @username to reviewers. One command should be issued for each reviewer. If needed later, remove reviewers with @ropensci-review-bot remove @username from reviewers.
 - [ ] If you want to change the due date for a review use @ropensci-review-bot set due date for @username to YYYY-MM-DD.
+
+
