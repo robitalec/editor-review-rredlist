@@ -49,3 +49,10 @@ Look for and assign two reviewers:
 - [ ] If you want to change the due date for a review use @ropensci-review-bot set due date for @username to YYYY-MM-DD.
 
 
+## Progress on suggestions
+
+- [X] README missing demonstration
+- [X] Introductory vignette missing overview of functions
+- [X] Mention HTTP testing in CONTRIBUTING
+- [X] avoid sapply in test-rl_threats.R
+- [X] document non-exported functions, at least those quite central to package eg. rr_GET, rr_base, rredlist_ua
